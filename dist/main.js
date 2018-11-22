@@ -94,7 +94,18 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar currentDate = new Date().toLocaleString();\nconsole.log('%c' + ('build ok: ' + currentDate), 'background: lime; color: green');\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("\n\n__webpack_require__(/*! ./styles.scss */ \"./src/styles.scss\");\n\nvar currentDate = new Date().toLocaleString();\nconsole.log('%c' + ('build ok: ' + currentDate), 'background: lime; color: green');\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/styles.scss":
+/*!*************************!*\
+  !*** ./src/styles.scss ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/styles.scss?");
 
 /***/ })
 
