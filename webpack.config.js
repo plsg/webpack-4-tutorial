@@ -1,8 +1,12 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+/** remove dist folder before build */
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+/** conditionally configure for development or production mode */
 // const devMode = process.env.NODE_ENV !== 'production';
+// options: devMode ? { minimize: false }
+
 
 module.exports = {
     entry: {
@@ -43,6 +47,7 @@ module.exports = {
             filename: 'styles--[chunkhash:4].css',
         }),
         new HtmlWebpackPlugin({
+            /** by default script and style tags are added to dist html */
             // inject: false,
             hash: true,
             template: './src/index.html',
